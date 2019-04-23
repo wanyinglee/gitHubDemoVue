@@ -36,6 +36,8 @@ export default {
       apiService.getRepositoryReadMe(repo).get().then(response => {
         this.$store.commit('setReadMe', response.data)
         router.push('/' + repo.full_name);
+      }, error => {
+        alert("Cannot find README for this repository.")
       })
     }
   }

@@ -31,6 +31,8 @@ export default {
       apiService.getUserRepositories(this.username).get().then(response => {
         this.$store.commit('setRepos', response.data)
         router.push('/' + this.username);
+      }, error => {
+        alert("Cannot find user.")
       })
     }
   }
