@@ -8,13 +8,11 @@
 </template>
 
 <script>
-import BaseNav from './BaseNav.vue'
 import VueMarkdown from 'vue-markdown'
 
 export default {
   name: 'ReadMe',
   components: {
-    BaseNav,
     VueMarkdown
   },
   data () {

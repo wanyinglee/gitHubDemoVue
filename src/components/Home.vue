@@ -9,9 +9,6 @@
 </template>
 
 <script>
-import BaseButton from './BaseButton.vue'
-import BaseInput from './BaseInput.vue'
-import BaseNav from './BaseNav.vue'
 import APIService from '../services/APIService.js'
 import axios from 'axios';
 import router from '../router'
@@ -19,11 +16,6 @@ import router from '../router'
 export default {
   name: 'Home',
   router,
-  components: {
-    BaseInput,
-    BaseButton,
-    BaseNav
-  },
   data () {
     return {
       instructionLabel: 'Please enter your username: ',

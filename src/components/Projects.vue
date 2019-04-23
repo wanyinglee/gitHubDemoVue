@@ -11,18 +11,12 @@
 
 <script>
 import router from '../router'
-import BaseButton from './BaseButton.vue'
-import BaseNav from './BaseNav.vue'
 import APIService from '../services/APIService.js'
 import axios from 'axios';
 
 export default {
   name: 'Projects',
   router,
-  components: {
-    BaseButton,
-    BaseNav
-  },
   data () {
     return {
     }
